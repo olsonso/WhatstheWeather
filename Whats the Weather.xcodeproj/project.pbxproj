@@ -14,6 +14,7 @@
 		8219A06C219F875100ADFC95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8219A06A219F875100ADFC95 /* LaunchScreen.storyboard */; };
 		8219A077219F875100ADFC95 /* Whats_the_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8219A076219F875100ADFC95 /* Whats_the_WeatherTests.swift */; };
 		8219A082219F875100ADFC95 /* Whats_the_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8219A081219F875100ADFC95 /* Whats_the_WeatherUITests.swift */; };
+		8219A092219F87B000ADFC95 /* untitled (63 of 151).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8219A091219F87B000ADFC95 /* untitled (63 of 151).jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8219A07D219F875100ADFC95 /* Whats the WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whats the WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8219A081219F875100ADFC95 /* Whats_the_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whats_the_WeatherUITests.swift; sourceTree = "<group>"; };
 		8219A083219F875100ADFC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8219A091219F87B000ADFC95 /* untitled (63 of 151).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "untitled (63 of 151).jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				8219A061219F875100ADFC95 /* AppDelegate.swift */,
 				8219A063219F875100ADFC95 /* ViewController.swift */,
 				8219A065219F875100ADFC95 /* Main.storyboard */,
+				8219A091219F87B000ADFC95 /* untitled (63 of 151).jpg */,
 				8219A068219F875100ADFC95 /* Assets.xcassets */,
 				8219A06A219F875100ADFC95 /* LaunchScreen.storyboard */,
 				8219A06D219F875100ADFC95 /* Info.plist */,
@@ -235,6 +238,7 @@
 				8219A06C219F875100ADFC95 /* LaunchScreen.storyboard in Resources */,
 				8219A069219F875100ADFC95 /* Assets.xcassets in Resources */,
 				8219A067219F875100ADFC95 /* Main.storyboard in Resources */,
+				8219A092219F87B000ADFC95 /* untitled (63 of 151).jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

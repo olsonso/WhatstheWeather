@@ -1,24 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bodoni72.ttc">
+            <string>BodoniSvtyTwoITCTT-Book</string>
+        </array>
+        <array key="Didot.ttc">
+            <string>Didot-Bold</string>
+        </array>
+        <array key="HiraginoMincho.ttc">
+            <string>HiraMinProN-W6</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Whats_the_Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sf.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4J-5j-rhQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Whats the Weather?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ep-qD-hwQ">
+                                <rect key="frame" x="45.5" y="44" width="284" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Ep-qD-hwQ" secondAttribute="height" multiplier="268:41" id="Rc1-0M-kK9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter Your City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjP-ta-XXY">
+                                <rect key="frame" x="119" y="97.5" width="137.5" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g. San Francisco, Denver" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVb-6O-aUI">
+                                <rect key="frame" x="96" y="143.5" width="183" height="30"/>
+                                <color key="backgroundColor" red="0.97998427349999995" green="0.99703505319999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" textContentType="address-level2"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96T-KP-hdL">
+                                <rect key="frame" x="158" y="181.5" width="59" height="34"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGe-Hm-acf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-F0-7uc">
+                                <rect key="frame" x="37.5" y="238.5" width="300" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="40H-AR-Zi2"/>
+                                    <constraint firstAttribute="width" constant="300" id="5hS-oM-sbL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="CaL-sF-TZn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="jeW-Re-bE4"/>
+                                    <constraint firstAttribute="height" constant="80" id="qET-XP-A34"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o4J-5j-rhQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8KL-fi-bSr"/>
+                            <constraint firstItem="7Ep-qD-hwQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gm3-ox-5rH"/>
+                            <constraint firstItem="96T-KP-hdL" firstAttribute="top" secondItem="OVb-6O-aUI" secondAttribute="bottom" constant="8" id="KtS-wi-BI5"/>
+                            <constraint firstItem="xjP-ta-XXY" firstAttribute="top" secondItem="7Ep-qD-hwQ" secondAttribute="bottom" constant="7.5" id="Njs-le-pEW"/>
+                            <constraint firstItem="o4J-5j-rhQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Pkw-Al-ZZo"/>
+                            <constraint firstItem="OVb-6O-aUI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RzF-Nw-7Qk"/>
+                            <constraint firstAttribute="trailing" secondItem="o4J-5j-rhQ" secondAttribute="trailing" id="VFq-4A-UeJ"/>
+                            <constraint firstItem="o4J-5j-rhQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bw9-b1-hcS"/>
+                            <constraint firstItem="xjP-ta-XXY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d44-69-url"/>
+                            <constraint firstItem="96T-KP-hdL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hTt-WV-L2V"/>
+                            <constraint firstItem="gTy-F0-7uc" firstAttribute="top" secondItem="96T-KP-hdL" secondAttribute="bottom" constant="23" id="jJE-fg-pw5"/>
+                            <constraint firstItem="OVb-6O-aUI" firstAttribute="top" secondItem="xjP-ta-XXY" secondAttribute="bottom" constant="29" id="jJW-29-xyD"/>
+                            <constraint firstItem="gTy-F0-7uc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p9X-f4-hQS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="enteredCity" destination="OVb-6O-aUI" id="Xhi-qV-pQ6"/>
+                        <outlet property="weatherLabel" destination="gTy-F0-7uc" id="gff-wq-T3t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sf.jpg" width="4000" height="6000"/>
+    </resources>
 </document>
